@@ -1,6 +1,8 @@
 # Takari Wedding Organizer
 
-Aplikasi web untuk **Takari Wedding Organizer** (Serang, Banten): katalog paket pernikahan, pemesanan dengan upload bukti bayar, dan **Wedding Planner** pribadi untuk calon pengantin. Admin mengelola paket, pesanan, pengguna, dan memantau planner client.
+> **Dummy project.** Dibuat untuk latihan dan portofolio, bukan layanan wedding organizer sungguhan. Nama, paket, harga, nomor rekening, kontak, dan data di dalamnya hanyalah contoh.
+
+Aplikasi web wedding organizer: katalog paket pernikahan, pemesanan dengan upload bukti bayar, dan **Wedding Planner** pribadi untuk calon pengantin. Admin mengelola paket, pesanan, pengguna, dan memantau planner client.
 
 Dibangun dengan Laravel 9 dan Bootstrap 5, dengan tema **Modern Minimalist Luxury** (lihat [`DESIGN.md`](DESIGN.md)).
 
@@ -345,7 +347,3 @@ Bila `.env` pernah terekspos, **ganti password database** dan jalankan `php arti
 | Error `Class ... not found` setelah `git pull` | `composer install` lalu `composer dump-autoload` |
 | `migrate` gagal di database baru | Pastikan database sudah dibuat dan `DB_*` di `.env` benar |
 | Tes gagal "Unknown database takariwo_test" | Buat database tes (lihat [Testing](#testing)) |
-
----
-
-© Takari Wedding Organizer · Taktakan, Serang – Banten · Instagram [@takari_wo](https://www.instagram.com/takari_wo)
