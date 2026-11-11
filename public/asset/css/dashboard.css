@@ -1,0 +1,48 @@
+/* Panel admin — hanya memakai token dari style.css */
+
+.sidebar {
+    background: var(--surface);
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    border-right: 1px solid var(--line);
+    padding: var(--space-6) 0;
+    overflow-y: auto;
+}
+.sidebar-brand { text-align: center; padding-inline: var(--space-5); margin-bottom: var(--space-6); }
+.sidebar-brand .logo { max-width: 120px; height: auto; margin-bottom: var(--space-4); }
+.sidebar-brand .eyebrow { margin: 0; }
+
+.admin-nav .nav-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    min-height: 44px;
+    padding: var(--space-3) var(--space-5);
+    color: var(--ink-soft);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    border-left: 2px solid transparent;
+    transition: color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+.admin-nav .nav-link .bi { font-size: var(--fs-base); width: 1.25rem; text-align: center; }
+.admin-nav .nav-link:hover { color: var(--ink); background: var(--ivory); }
+.admin-nav .nav-link.active { color: var(--ink); background: var(--ivory); border-left-color: var(--rose); }
+.admin-nav hr { margin: var(--space-4) var(--space-5); }
+.admin-logout { padding: var(--space-5) var(--space-5) 0; }
+
+.admin-topbar {
+    background: rgba(255, 255, 255, .92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+    min-height: 60px;
+    z-index: 1030;
+}
+.admin-topbar .navbar-brand { font-family: var(--font-display); font-size: var(--fs-lg); margin: 0; }
+.admin-topbar-spacer { height: 60px; }
+
+.admin-main { padding: var(--space-7) var(--space-7) var(--space-8); }
+@media (max-width: 991.98px) { .admin-main { padding: var(--space-6) var(--space-4) var(--space-7); } }
+
+
+@media (max-width: 991.98px) { .offcanvas-start { width: 280px; } }

@@ -1,0 +1,5 @@
+# Lapisan pengaman: folder project TIDAK boleh diakses langsung dari web.
+# Hanya folder public/ yang boleh (diizinkan lagi di public/.htaccess).
+# Tanpa ini, bila document root server menunjuk ke folder di atas public/,
+# file seperti .env (password database, APP_KEY), log, dan kode bisa diunduh siapa saja.
+Require all denied
